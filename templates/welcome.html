@@ -1,11 +1,24 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <img src="{% static 'images/HEEE_logo.ico' %}" alt="weblogo">
+    <title>Ace Your Exit Exam!</title>
+    <link rel="stylesheet" href="{% static 'css/welcome.css' %}">
 </head>
-<body>
-    <center><h1>Welcome to <br>Higher Education Exit <br> Exam</h1> </center>
-</body>
-</html>
+    <body>
+        <div class="container">
+        <h1>Welcome, Future Graduates!</h1>
+        <p>Feeling the pre-exam jitters?  We've got your back!</p>
+        <div class="cta-container">
+        <h2>Ready to Crush Your Exit Exam?</h2>
+        <button id="get-started-btn">Let's Do This!</button>
+        <p class="disclaimer">*Disclaimer: Crushing may involve hard work, dedication, and a sprinkle of our awesome prep materials.</p>
+        </div>
+        </div>
+        
+        <script src="{% static 'js/welcome.js' %}"></script>
+        </body>
+        </html>
