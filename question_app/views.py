@@ -10,3 +10,10 @@ def register_user (request):
 
 def index (request):
     return  render(request,'index.html')
+
+def cs_courses (request):
+    return  render(request,'cs_courses.html')
+
+def questions (request):
+    return  render(request,'questions.html')
+ 

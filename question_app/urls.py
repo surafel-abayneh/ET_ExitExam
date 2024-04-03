@@ -26,5 +26,7 @@ urlpatterns = [
     
     path('', views.welcome),
     path('register_user/', views.register_user),
-     path('index/', views.index,name='index')
+    path('index/', views.index,name='index'),
+    path('cs_courses/', views.cs_courses,name='cs_courses'),
+    path('questions/', views.questions,name='questions'),
 ]

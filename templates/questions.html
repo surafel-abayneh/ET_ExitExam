@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computer Science Courses</title>
+  <link rel="stylesheet" href="{% static 'css/questions.css' %}"> 
+</head>
+<body>
+    <div class="container">
+      <h1> Software Engineering MCQ</h1>
+      <div class="question">
+        <h2>Question 1:</h2>
+        <p>What is the capital of France?</p>
+        <form>
+          <input type="radio" name="q1" value="paris"> Paris<br>
+          <input type="radio" name="q1" value="london"> London<br>
+          <input type="radio" name="q1" value="berlin"> Berlin<br>
+          <input type="radio" name="q1" value="rome"> Rome<br>
+        </form>
+      </div>
+      <div class="question">
+        <h2>Question 2:</h2>
+        <p>What is the largest planet in our solar system?</p>
+        <form>
+          <input type="radio" name="q2" value="earth"> Earth<br>
+          <input type="radio" name="q2" value="jupiter"> Jupiter<br>
+          <input type="radio" name="q2" value="mars"> Mars<br>
+          <input type="radio" name="q2" value="venus"> Venus<br>
+        </form>
+      </div>
+      <!-- Add more questions here -->
+    </div>
+  </body>
+  </html>
