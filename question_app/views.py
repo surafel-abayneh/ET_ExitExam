@@ -1,7 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from django.http import HttpResponse
-
-from question_app.forms import UserForm
+from .forms import UserForm
+from .models import User
 
 def welcome (request):
     return  render(request,'welcome.html')
@@ -26,3 +26,18 @@ def register_user(request):
             form.save()
     context = {"form":form}
     return  render(request,'register_user.html',context)
+
+
+
+def check_email(request):
+    if request.method == 'POST':
+        email = request.POST.get('email')
+        if User.objects.filter(email=email).exists():
+            # If email exists, redirect to home page
+            return redirect('index') 
+        else:
+            # If email does not exist, proceed with registration
+           return redirect('register_user') 
+    else:
+        # If not a POST request, render a form for email input
+        return render(request, 'email_check.html')

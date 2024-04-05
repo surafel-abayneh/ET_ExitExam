@@ -25,8 +25,9 @@ from .import views
 urlpatterns = [
     
     path('', views.welcome),
-    path('register_user/', views.register_user),
+    path('register_user/', views.register_user , name ='register_user'),
     path('index/', views.index,name='index'),
     path('cs_courses/', views.cs_courses,name='cs_courses'),
     path('questions/', views.questions,name='questions'),
+    path('check_email/', views.check_email,name='check_email'),
 ]
