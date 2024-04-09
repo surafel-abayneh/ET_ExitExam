@@ -8,6 +8,7 @@ class UserForm(forms.ModelForm):
 
 
  
+ 
 class RegistrationForm(forms.Form):
     email = forms.EmailField()
 

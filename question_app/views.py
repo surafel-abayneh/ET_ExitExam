@@ -1,7 +1,8 @@
+from  django.views.generic import ListView
 from django.shortcuts import render,redirect
 from django.http import HttpResponse
 from .forms import UserForm
-from .models import User
+from .models import User,Course
 
 def welcome (request):
     return  render(request,'welcome.html')
@@ -41,3 +42,13 @@ def check_email(request):
     else:
         # If not a POST request, render a form for email input
         return render(request, 'email_check.html')
+     
+
+class CourseListView(ListView):
+    model = Course
+    template_name = 'cs_courses.html'
+    
+
+def course_view(request, pk):
+    course = Course.objects.get(pk=pk)
+    return render(request, 'mcq.html',{'obj':course})
