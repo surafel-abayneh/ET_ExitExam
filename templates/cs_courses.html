@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computer Science Courses</title>
+  <link rel="stylesheet" href="{% static 'css/cs_courses.css' %}"> 
+</head>
+<body>
+  <div class="container">
+    <div class="course">
+    {% for course in courses%}
+    {{course.images}}
+    <!-- <img src="{% static 'images/Software-E.png' %}" alt="Software Engineering"> -->
+      <a href="{% url 'questions' %}"><h2>{{course.name}}</h2></a>
+      <div class="progress">
+        <div class="progress-bar" style="width: 10%;"></div>
+      </div>
+    </div>
+    {% endfor %}
+ 
+
+</body>
+</html>

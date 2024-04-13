@@ -27,9 +27,14 @@ urlpatterns = [
     path('', views.welcome),
     path('register_user/', views.register_user , name ='register_user'),
     path('index/', views.index,name='index'),
-   # path('cs_courses/', views.cs_courses,name='cs_courses'),
+    path('cs_courses/', views.list_courses,name='cs_course'),
     path('questions/', views.questions,name='questions'),
     path('check_email/', views.check_email,name='check_email'),
-    path('cs_courses/', views.CourseListView.as_view(), name='courses-view'),
-    path('<pk>/', views.course_view,name='course-view'),
+    path('<int:pk>/', views.topic_list,name='topic_list'),
+    path('departments/', views.department_list, name='department_list'),
+    path('courses/<int:department_id>/', views.course_list, name='course_list'), 
+    path('topic/<int:topic_id>/', views.topic_questions, name='topic_questions'),
+    path('course/<int:course_id>/', views.course_topics, name='course_topics'),
+    path('topic/<int:topic_id>/', views.topic_questions, name='topic_questions'),
+   
 ]
