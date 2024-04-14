@@ -5,34 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to the Quiz App!</title>
-    <link rel="stylesheet" href="{% static 'css/index.css' %}"> 
+    <link rel="stylesheet" href="{% static 'css/index1.css' %}"> 
 </head>
 <body>
   
     <div class="container">
-      <div class="card">
+      <div class="card1" >
+      
         <a href=""><h2>Quiz Mode</h2></a>
         <p>Test your knowledge with our quizzes!</p>
+       
       </div>
-      <div class="card">
+      <div class="card2">
+      
        <a href=""><h2>Feedback</h2></a> 
         <p>Provide us with your valuable feedback.</p>
+      
       </div>
-      <div class="card">
+      <div class="card3">
+        
        <a href=""><h2>News</h2></a> 
-        <p>Stay updated with the latest news and announcements.</p>
+        <p>Stay updated with the latest news.</p>
+     
       </div>
-      <div class="card">
+      <div class="card4">
+      
         <a href=""><h2>About</h2></a>
         <p>Learn more about our website and team.</p>
+  
       </div>
-      <div class="card">
-        <a href=""><h2>Model Multiple Choice Questions</h2></a>
-        <p>Practice with our model MCQs to ace your exams.</p>
+      <div class="card5">
+      
+        <a href=""><h2>Model MCQs</h2></a>
+        <p>Practice with model MCQs .</p>
+      
       </div>
-      <div class="card">
-        <a href="{% url 'department_list' %}"><h2>Course Specific Multiple Choice Questions</h2></a>
+      <div class="card6">
+      
+        <a href="{% url 'department_list' %}"><h2>Course Specific MCQs</h2></a>
         <p>Explore MCQs tailored to your course.</p>
+      
       </div>
     </div>
   </body>

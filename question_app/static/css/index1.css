@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #b3b3b3;
+    background:  linear-gradient(rgba(1, 123, 145, 0.5), rgba(110, 6, 6, 0.5)),
+    center;
+    background-attachment: fixed;
+    background-repeat:repeat;
+}
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .card1 a,.card2 a,.card3 a,.card4 a,.card5 a,.card6 a
+  {
+    text-decoration: none;
+    color: #000000;
+    text-transform: uppercase;
+    font-family:Montserrat;
+  }
+  
+   
+      
+      .card1:hover,
+      .card2:hover,
+      .card3:hover,
+      .card4:hover,
+      .card5:hover,
+      .card6:hover {
+        transform: translateY(-5px);
+        transition: transform 0.3s ease;
+        background: rgb(214, 214, 214);
+        color: #FF6700;
+        border-radius: 6px;
+        opacity: 2;
+      }
+
+      .card1{
+      background-color:#ffffff;
+      float:left;
+      width: 350px;
+      min-height: 100px;
+      border-radius: 10px; 
+      box-shadow: 0 20px 20px rgb(22 33 39 / 100%);
+      padding: 80px 20px 40px 20px;
+      margin: 20px;
+      background-image: url("../images/istockphoto-1061119906-1024x1024.jpg");
+      background-position: cover;
+      background-repeat:no-repeat;
+      background-size:  100% 60%  ;
+       }
+       .card2{
+        background-color:#ffffff;
+        float:left;
+        width: 350px;
+        min-height: 100px;
+        border-radius: 10px; 
+        box-shadow: 0 20px 20px rgb(22 33 39 / 100%);
+        padding: 80px 20px 40px 20px;
+        margin: 20px;
+        background-image: url("../images/pexiels/pexels-felix-mittermeier-956999.jpg");
+        background-position: cover;
+        background-repeat:no-repeat;
+        background-size:  100% 60%  ;
+         }
+         .card3{
+          background-color:#ffffff;
+          float:left;
+          width: 350px;
+          min-height: 100px;
+          border-radius: 10px; 
+          box-shadow: 0 20px 20px rgb(22 33 39 / 100%);
+          padding: 80px 20px 40px 20px;
+          margin: 20px;
+          background-image: url("../images/pexiels/dominik-lange-Lej_oqHljbk-unsplash.jpg");
+          background-position: cover;
+          background-repeat:no-repeat;
+          background-size:  100% 60%  ;
+           }
+           .card4{
+            background-color:#ffffff;
+            float:left;
+            width: 350px;
+            min-height: 100px;
+            border-radius: 10px; 
+            box-shadow: 0 20px 20px rgb(22 33 39 / 100%);
+            padding: 80px 20px 40px 20px;
+            margin: 20px;
+            background-image: url("../images/pexiels/pi.jpg");
+            background-position: cover;
+            background-repeat:no-repeat;
+            background-size:  100% 60%  ;
+             }
+             .card5{
+              background-color:#ffffff;
+              float:left;
+              width: 350px;
+              min-height: 100px;
+              border-radius: 10px; 
+              box-shadow: 0 20px 20px rgb(22 33 39 / 100%);
+              padding: 80px 20px 40px 20px;
+              margin: 20px;
+              background-image: url("../images/pexiels/idb.jpg");
+              background-position: cover;
+              background-repeat:no-repeat;
+              background-size:  100% 60%  ;
+               }
+               .card6{
+                background-color:#ffffff;
+                float:left;
+                width: 350px;
+                min-height: 100px;
+                border-radius: 10px; 
+                box-shadow: 0 20px 20px rgb(22 33 39 / 100%);
+                padding: 80px 20px 40px 20px;
+                margin: 20px;
+                background-image: url("../images/pexiels/pexels-keira-burton-6146978.jpg");
+                background-position: cover;
+                background-repeat:no-repeat;
+                background-size:  100% 60%  ;
+                 }
+              
